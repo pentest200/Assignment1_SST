@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moon Orbit</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #000;
+      overflow: hidden;
+    }
+    .earth {
+      width: 250px;
+      height: 250px;
+      background-image: url('https://svs.gsfc.nasa.gov/vis/a000000/a003500/a003525/Sea_Ice_Poster_BG_HD3.2064.jpg');
+      background-size: cover;
+      background-position: center;
+      border-radius: 50%;
+      position: relative;
+    }
+    .orbit {
+      width: 500px;
+      height: 500px;
+      border: 2px dashed rgb(53, 48, 48);
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: rotate 8s linear infinite;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    .moon {
+      width: 100px;
+      height: 100px;
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/e1/FullMoon2010.jpg');
+      background-size: cover;
+      background-position: center;
+      border-radius: 50%;
+    }
+
+    @keyframes rotate {
+      from { transform: translate(-50%, -50%) rotate(0deg); }
+      to { transform: translate(-50%, -50%) rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="earth">
+    <div class="orbit">
+      <div class="moon"></div>
+    </div>
+  </div>
+</body>
+</html>

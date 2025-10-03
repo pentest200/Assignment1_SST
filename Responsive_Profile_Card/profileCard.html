@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Profile Card</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgb(56, 53, 53);
+      max-width: 450px;
+      width: 95%;
+      text-align: center;
+      padding: 40px;
+      transition: transform 0.2s;
+    }
+
+    .profile-img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 25px;
+      border: 4px solid #4a148c;
+    }
+
+    h2 {
+      margin: 20px 0 15px;
+      color: #4a148c;
+      font-size: 28px;
+    }
+
+    p {
+      margin: 0 0 25px;
+      color: #555;
+      font-size: 18px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 30px;
+      border-radius: 6px;
+      text-decoration: none;
+      color: white;
+      background: #4a148c;
+      font-weight: bold;
+      font-size: 18px;
+      transition: background 0.2s;
+    }
+
+    .btn:hover {
+      background: #6a1b9a;
+    }
+
+    @media(max-width: 400px) {
+      .card {
+        padding: 30px;
+      }
+      h2 {
+        font-size: 22px;
+      }
+      p {
+        font-size: 16px;
+      }
+      .profile-img {
+        width: 120px;
+        height: 120px;
+      }
+      .btn {
+        padding: 12px 25px;
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="pic.jpg" alt="Profile Picture" class="profile-img">
+    <h2>Ujjwal Shreshtha</h2>
+    <p>Web Developer | Tech Enthusiast | Potratist</p>
+    <a href="#" class="btn">Follow</a>
+  </div>
+</body>
+</html>

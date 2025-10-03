@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #333;
+    }
+    .container {
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .top {
+      background-color: #a8dadc;
+      padding: 20px;
+      text-align: center;
+    }
+    .top h1 {
+      margin: 0;
+      color: #1d3557;
+    }
+    .nav {
+      margin-top: 10px;
+    }
+    .nav a {
+      display: inline-block;
+      margin: 10px 15px;
+      text-decoration: none;
+      color: #1d3557;
+      font-weight: bold;
+    }
+    .content {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 20px;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .box {
+      width: 500px;
+      background-color: #f1faee;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgb(64, 62, 62);
+      text-align: center;
+    }
+    .box img {
+      width: 500px;
+      height: 500px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      object-fit: cover;
+    }
+    .bottom {
+      background-color: #a8dadc;
+      text-align: center;
+      padding: 15px;
+      color: #1d3557;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="top">
+      <h1>Welcome to My First Website</h1>
+      <div class="nav">
+        <a href="#">Home</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="box">
+        <img src="https://i.pinimg.com/736x/15/37/a7/1537a76c07952bbe69da01b8086a5f00.jpg" alt="Image 1">
+        <p>Black Clover</p>
+      </div>
+      <div class="box">
+        <img src="https://i.pinimg.com/736x/db/70/37/db7037de7e594360eff498c1da97fcda.jpg" alt="Image 2">
+        <p>Solo Leveling</p>
+      </div>
+      <div class="box">
+        <img src="https://preview.redd.it/hwyb-cid-kagenou-from-the-eminence-in-shadow-v0-fjcxjwviejfc1.jpeg?auto=webp&s=312a79b1743206dd41b0361d1c0a4f552466e9bb" alt="Image 3">
+        <p>Eminence in Shadow</p>
+      </div>
+    </div>
+
+    <div class="bottom">
+      My Anime Website
+    </div>
+  </div>
+</body>
+</html>

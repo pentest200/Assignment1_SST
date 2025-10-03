@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Layout</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      padding: 20px;
+    }
+    .grid-container {
+      display: grid;
+      gap: 20px;
+    }
+    .row1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 20px;
+    }
+    .row2 {
+      display: grid;
+      grid-template-columns: 2fr 2fr;
+      gap: 20px;
+    }
+    .row3 {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      gap: 20px;
+    }
+    .grid-item {
+      background-color: #fff;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgb(65, 61, 61);
+      transition: transform 0.2s;
+    }
+    .grid-item:hover {
+      transform: translateY(-3px);
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align:center;color:#4a148c;">Custom Grid Layout</h1><br>
+  <div class="grid-container">
+    <div class="row1">
+      <div class="grid-item">Item 1</div>
+      <div class="grid-item">Item 2</div>
+      <div class="grid-item">Item 3</div>
+      <div class="grid-item">Item 4</div>
+    </div>
+
+    <div class="row2">
+      <div class="grid-item">Item 5</div>
+      <div class="grid-item">Item 6</div>
+    </div>
+
+    <div class="row3">
+      <div class="grid-item">Item 7</div>
+      <div class="grid-item">Item 8</div>
+    </div>
+  </div>
+</body>
+</html>

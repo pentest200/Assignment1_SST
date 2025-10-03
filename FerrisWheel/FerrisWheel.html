@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferris Wheel</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: white;
+        }
+
+        .wheel {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            border-radius: 50%;
+            animation: rotate 4s linear infinite;
+        }
+
+        .spoke1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 2px;
+            height: 100%;
+            background: black;
+            transform-origin: top center;
+            transform: rotate(0deg) translateY(-50%)
+        }
+
+        .spoke2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 2px;
+            height: 100%;
+            background: black;
+            transform-origin: top center;
+            transform: rotate(0deg) translateY(-50%)
+        }
+
+        .spoke3 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 2px;
+            height: 100%;
+            background: black;
+            transform-origin: top center;
+            transform: rotate(0deg) translateY(-50%)
+        }
+
+        .spoke4 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 2px;
+            height: 100%;
+            background: black;
+            transform-origin: top center;
+            transform: rotate(180deg) translateY(-50%);
+        }
+
+        .spoke5 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 2px;
+            height: 100%;
+            background: black;
+            transform-origin: top center;
+            transform: rotate(240deg) translateY(-50%);
+        }
+
+        .spoke6 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 2px;
+            height: 100%;
+            background: black;
+            transform-origin: top center;
+            transform: rotate(300deg) translateY(-50%);
+        }
+
+        .cabin1 {
+            position: relative;
+            width: 50px;
+            height: 50px;
+            background: rgb(13, 52, 158);
+            transform: rotate(450deg);
+            top: -25px;
+            left: 125px;
+            animation: rotate 6s linear infinite;
+        }
+
+        .cabin2 {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: rgb(13, 52, 158);
+            transform: rotate(450deg);
+            top: 40px;
+            left: 250px;
+            animation: rotate 6s linear infinite;
+        }
+
+        .cabin3 {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: rgb(13, 52, 158);
+            transform: rotate(450deg);
+            top: 190px;
+            left: 250px;
+            animation: rotate 6s linear infinite;
+        }
+
+        .cabin4 {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: rgb(13, 52, 158);
+            transform: rotate(450deg);
+            top: 265px;
+            left: 125px;
+            animation: rotate 6s linear infinite;
+        }
+
+        .cabin5 {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: rgb(13, 52, 158);
+            transform: rotate(450deg);
+            top: 190px;
+            left: 0;
+            animation: rotate 6s linear infinite;
+        }
+
+        .cabin6 {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: rgb(13, 52, 158);
+            transform: rotate(450deg);
+            top: 40px;
+            left: 0;
+            animation: rotate 6s linear infinite;
+        }
+
+        @keyframes cabin1 {
+            0% {
+                background-color: aqua;
+            }
+
+            100% {
+                background-color: red;
+            }
+
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wheel">
+        <div class="spoke1"></div>
+        <div class="spoke2"></div>
+        <div class="spoke3"></div>
+        <div class="spoke4"></div>
+        <div class="spoke5"></div>
+        <div class="spoke6"></div>
+        <div class="cabin1"></div>
+        <div class="cabin2"></div>
+        <div class="cabin3"></div>
+        <div class="cabin4"></div>
+        <div class="cabin5"></div>
+        <div class="cabin6"></div>
+    </div>
+</body>
+
+</html>
